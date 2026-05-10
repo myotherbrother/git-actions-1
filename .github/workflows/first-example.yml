@@ -1,6 +1,6 @@
 name: First Workflow
 
-on: push
+on: workflow_dispatch
 
 jobs:
     first_job:
@@ -8,7 +8,7 @@ jobs:
         steps:
         - name: Checkout Repo
           uses: actions/checkout@v6
-          
+
         - name: Welcome mesage
           run: echo "This is a Github Job"
 
