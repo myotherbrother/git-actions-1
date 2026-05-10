@@ -6,6 +6,9 @@ jobs:
     first_job:
         runs-on: uubuntu-latest
         steps:
+        - name: Checkout Repo
+          uses: actions/checkout@v6
+          
         - name: Welcome mesage
           run: echo "This is a Github Job"
 
